@@ -1,0 +1,21 @@
+<template>  
+  <require from="../src/custom.min.css"></require>  
+  <require from="sidebar-menu.html"></require>
+  <require from="top-navigation.html"></require>
+  <loading-indicator loading.bind="router.isNavigating"></loading-indicator>
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+            <sidebar-menu></sidebar-menu>
+          </div>
+        </div>
+        <top-navigation></top-navigation>
+
+        <!-- page content -->
+        <div class="right_col" role="main">         
+          <router-view></router-view>
+        </div>
+        <!-- /page content -->
+      </div>
+    </div>
+</template>
