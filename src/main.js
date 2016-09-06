@@ -1,5 +1,5 @@
 import 'bootstrap';
-import {customJS} from '../src/custom.js';
+import '../src/custom.js';
 
 //Configure Bluebird Promises.
 //Note: You may want to use environment-specific configuration.
@@ -25,8 +25,8 @@ export function configure(aurelia) {
   // aurelia.start().then(() => aurelia.setRoot()).then(() => {loadSidebar();});
 
   aurelia.start()
-    .then(a => a.setRoot())
-    .then(a => {     
+    .then(() => aurelia.setRoot())
+    .then(() => {     
       loadSidebar();      
     });  
       

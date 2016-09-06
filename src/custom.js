@@ -140,9 +140,9 @@ CURRENT_URL = window.location.href.split('?')[0],
         }).parent().addClass('active');
 
         // recompute content when resizing
-        $(window).smartresize(function(){  
-            setContentHeight();
-        });
+        // $(window).smartresize(function(){  
+        //     setContentHeight();
+        // });
 
         setContentHeight();
 
@@ -186,11 +186,11 @@ CURRENT_URL = window.location.href.split('?')[0],
     // /Panel toolbox
 
     // Tooltip
-    $(document).ready(function() {
-        $('[data-toggle="tooltip"]').tooltip({
-            container: 'body'
-        });
-    });
+    // $(document).ready(function() {
+    //     $('[data-toggle="tooltip"]').tooltip({
+    //         container: 'body'
+    //     });
+    // });
     // /Tooltip
 
     // Progressbar
