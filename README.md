@@ -1,4 +1,4 @@
-# aurelia-skeleton-navigation
+# aurelia-skeleton-navigation ESNext (https://github.com/aurelia/skeleton-navigation) + Bootstrap Gentella Alela template(https://github.com/puikinsh/gentelella)
 
 ## Running The App
 
