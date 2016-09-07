@@ -8,7 +8,6 @@ System.config({
     "resources": "src/resources",
     "elements": "src/resources/elements"
   },
-
   map: {
     "MichaelZinsmaier/CurvedLines": "github:MichaelZinsmaier/CurvedLines@1.1.1",
     "aurelia-animator-css": "npm:aurelia-animator-css@1.0.0",
@@ -44,7 +43,7 @@ System.config({
     "moment": "npm:moment@2.14.1",
     "nprogress": "github:rstacruz/nprogress@0.2.0",
     "text": "github:systemjs/plugin-text@0.0.8",
-    "github:dangrossman/bootstrap-daterangepicker@2.1.24":{
+    "github:dangrossman/bootstrap-daterangepicker@2.1.24": {
       "jquery": "github:components/jquery@3.1.0"
     },
     "github:fronteed/iCheck@1.0.2": {
