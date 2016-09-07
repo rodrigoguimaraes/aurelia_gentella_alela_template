@@ -50,7 +50,13 @@ var CURRENT_URL = window.location.href.split('?')[0],
     $FOOTER = $('footer');
 
 function reloadSidebar(){
-        CURRENT_URL = window.location.href.split('?')[0].split('#')[1];        
+        
+        if(window.location.href.split('?')[0].split('#')[1]){
+            CURRENT_URL = window.location.href.split('?')[0].split('#')[1];
+        }else{
+            CURRENT_URL = "#/";
+        }
+                
         $SIDEBAR_MENU.find('.nav .child_menu').find('li').removeClass('current-page'); // clear current-page class from previous li..
         $SIDEBAR_MENU.find('a[href="#' + CURRENT_URL + '"]').parent('li').addClass('current-page');
 }

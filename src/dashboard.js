@@ -23,7 +23,7 @@ import "dangrossman/bootstrap-daterangepicker/daterangepicker.js";
 
 
 
-export class Welcome extends InnerPage{
+export class Dashboard extends InnerPage{
 
   constructor(){
     super();

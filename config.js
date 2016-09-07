@@ -8,8 +8,11 @@ System.config({
     "resources": "src/resources",
     "elements": "src/resources/elements"
   },
+
   map: {
+    "DmitryBaranovskiy/raphael": "github:DmitryBaranovskiy/raphael@2.2.1",
     "MichaelZinsmaier/CurvedLines": "github:MichaelZinsmaier/CurvedLines@1.1.1",
+    "adobe-webplatform/eve": "github:adobe-webplatform/eve@0.2.4",
     "aurelia-animator-css": "npm:aurelia-animator-css@1.0.0",
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0",
     "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0",
@@ -35,18 +38,23 @@ System.config({
     "fetch": "github:github/fetch@1.0.0",
     "flot/flot": "github:flot/flot@0.8.3",
     "font-awesome": "npm:font-awesome@4.6.3",
+    "gwatts/jquery.sparkline": "github:gwatts/jquery.sparkline@2.1.2",
     "icheck": "github:fronteed/iCheck@1.0.2",
     "johnpozy/flot-spline": "github:johnpozy/flot-spline@0.8.2",
     "jquery": "npm:jquery@3.1.0",
     "manifestinteractive/jqvmap": "github:manifestinteractive/jqvmap@1.5.1",
     "minddust/bootstrap-progressbar": "github:minddust/bootstrap-progressbar@0.9.0",
     "moment": "npm:moment@2.14.1",
+    "morrisjs/morris.js": "github:morrisjs/morris.js@0.5.1",
     "nprogress": "github:rstacruz/nprogress@0.2.0",
     "text": "github:systemjs/plugin-text@0.0.8",
     "github:dangrossman/bootstrap-daterangepicker@2.1.24": {
       "jquery": "github:components/jquery@3.1.0"
     },
     "github:fronteed/iCheck@1.0.2": {
+      "jquery": "github:components/jquery@3.1.0"
+    },
+    "github:gwatts/jquery.sparkline@2.1.2": {
       "jquery": "github:components/jquery@3.1.0"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
@@ -63,6 +71,13 @@ System.config({
     },
     "github:jspm/nodelibs-vm@0.1.0": {
       "vm-browserify": "npm:vm-browserify@0.0.4"
+    },
+    "github:DmitryBaranovskiy/raphael@2.2.1": {
+      "adobe-webplatform/eve": "github:adobe-webplatform/eve@0.2.4"
+    },    
+    "github:morrisjs/morris.js@0.5.1": {
+      "adobe-webplatform/eve": "github:adobe-webplatform/eve@0.2.4",
+      "DmitryBaranovskiy/raphael": "github:DmitryBaranovskiy/raphael@2.2.1"
     },
     "github:rstacruz/nprogress@0.2.0": {
       "css": "github:systemjs/plugin-css@0.1.27"
