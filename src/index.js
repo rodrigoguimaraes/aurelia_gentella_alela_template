@@ -52,7 +52,6 @@ export class Welcome extends InnerPage{
       legend: false,
       responsive: false
     };
-    console.log("Putitrain");
 
     new Chart(document.getElementById("canvas1"), {
       type: 'doughnut',

@@ -51,7 +51,6 @@ var CURRENT_URL = window.location.href.split('?')[0],
 
 function reloadSidebar(){
         CURRENT_URL = window.location.href.split('?')[0].split('#')[1];        
-        console.log("Current URL : " + CURRENT_URL);
         $SIDEBAR_MENU.find('.nav .child_menu').find('li').removeClass('current-page'); // clear current-page class from previous li..
         $SIDEBAR_MENU.find('a[href="#' + CURRENT_URL + '"]').parent('li').addClass('current-page');
 }
@@ -69,8 +68,6 @@ CURRENT_URL = window.location.href.split('?')[0],
 
     // Sidebar
     $(document).ready(function() {
-        console.log("CARREGOU");    
-        console.log($('#sidebar-menu'));
 
         // TODO: This is some kind of easy fix, maybe we can improve this
         var setContentHeight = function () {
@@ -89,7 +86,6 @@ CURRENT_URL = window.location.href.split('?')[0],
         };
 
         $SIDEBAR_MENU.find('a').on('click', function(ev) {
-            console.log("Call n1");
             var $li = $(this).parent();
 
             if ($li.is('.active')) {
