@@ -1,5 +1,5 @@
 //import {computedFrom} from 'aurelia-framework';
-import {InnerPage} from './app.js';
+import {InnerPage} from "app.js";
 import "icheck/icheck.min.js"
 import "minddust/bootstrap-progressbar/bootstrap-progressbar.min.js";
 import "fastclick/lib/fastclick.js";

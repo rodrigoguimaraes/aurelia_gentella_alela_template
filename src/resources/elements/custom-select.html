@@ -1,0 +1,5 @@
+<template>
+    <select class="${elementClasses}" tabindex="-1">
+        <option repeat.for="option of options" value.bind="option.value">${option.label}</option>
+    </select>
+</template>

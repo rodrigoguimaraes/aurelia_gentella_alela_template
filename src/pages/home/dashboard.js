@@ -1,5 +1,5 @@
 //import {computedFrom} from 'aurelia-framework';
-import {InnerPage} from './app.js';
+import {InnerPage} from "app.js";
 import "manifestinteractive/jqvmap/dist/jquery.vmap.js";
 import "manifestinteractive/jqvmap/dist//maps/jquery.vmap.world.js";
 import "manifestinteractive/jqvmap/examples/js/jquery.vmap.sampledata.js";
@@ -20,6 +20,7 @@ import "darkskyapp/skycons/skycons.js";
 import "datejs/Datejs/build/date.js";
 import moment from "moment/moment.js";
 import "dangrossman/bootstrap-daterangepicker/daterangepicker.js";
+
 
 
 
@@ -303,7 +304,7 @@ export class Dashboard extends InnerPage{
     // /Panel toolbox
 
     // Tooltip
-    // $(document).ready(function() {
+    // $(function() {        
     //     $('[data-toggle="tooltip"]').tooltip({
     //         container: 'body'
     //     });

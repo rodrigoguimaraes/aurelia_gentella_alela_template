@@ -5,11 +5,10 @@ export class App {
   configureRouter(config, router) {
     config.title = 'Aurelia';
     config.map([
-      { route: ['', 'dashboard'], name: 'dashboard',      moduleId: 'dashboard',      nav: true, title: 'Dashboard'},
-      { route: ['dashboard2'],  name: 'dashboard2',      moduleId: 'dashboard2',      nav: true, title: 'Dashboard 2'},
-      { route: ['dashboard3'],  name: 'dashboard3',      moduleId: 'dashboard3',      nav: true, title: 'Dashboard 3'},
-      { route: 'users',         name: 'users',        moduleId: 'users',        nav: true, title: 'Github Users' },
-      { route: 'child-router',  name: 'child-router', moduleId: 'child-router', nav: true, title: 'Child Router' }
+      { route: ['', 'dashboard'], name: 'dashboard',      moduleId: 'pages/home/dashboard',       nav: true, title: 'Dashboard'},
+      { route: ['dashboard2'],    name: 'dashboard2',     moduleId: 'pages/home/dashboard2',      nav: true, title: 'Dashboard 2'},
+      { route: ['dashboard3'],    name: 'dashboard3',     moduleId: 'pages/home/dashboard3',      nav: true, title: 'Dashboard 3'},
+      { route: ['form'],          name: 'form',           moduleId: 'pages/forms/general-form',           nav: true, title: 'General Form'}      
     ]);  
     this.router = router;    
   }
