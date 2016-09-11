@@ -11,10 +11,13 @@ import 'select2/select2/js/select2.full.min.js';
 export class CustomSelect {
     @bindable name = null; // The name of our custom select
     @bindable selected = false; // The default selected value
-    @bindable options = {}; // The label/option values
+    @bindable options = []; // The label/option values
+    @bindable groupedoptions = []; // The label/option values
     @bindable elementClasses = null;
     @bindable classToFindElement = null; // class used to find the element
-    // @bindable elementClasses = null; //custom styles  
+    @bindable placeholder = "select";
+    @bindable allowClear = true;
+    @bindable multiple = false;
 
     constructor(element) {
         this.element = element;
@@ -23,12 +26,14 @@ export class CustomSelect {
     // Once the Custom Element has its DOM instantiated and ready for binding
     // to happenings within the DOM itself
     attached() {
-        console.log("classToFindElement");
-        console.log(this.classToFindElement);
-        console.log(this.elementClasses);
+        console.log(this.options);                
+        console.log(this.groupedOptions);
+        console.log("___");
         $(this.element).find('.' + this.classToFindElement)
-            .select2()
-            .on('change', (event) => {
+            .select2({ 
+                placeholder: this.placeholder,
+                allowClear: this.allowClear
+            }).on('change', (event) => {
                 let changeEvent;
 
                 if (window.CustomEvent) {

@@ -1,5 +1,14 @@
 <template>
-    <select class="${elementClasses}" tabindex="-1">
-        <option repeat.for="option of options" value.bind="option.value">${option.label}</option>
+    <select class="${elementClasses}" tabindex="-1" if.bind="multiple" multiple="multiple">
+       <option if.bind="options" repeat.for="option of options" value.bind="option.value">${option.label}</option>
+        <optgroup repeat.for="group of groupedoptions" label.bind="group.label" if.bind="groupedoptions && group.isGroup">
+            <option repeat.for="option of group.options" value.bind="option.value">${option.label}</option>
+        </optgroup>
+    </select>        
+    <select class="${elementClasses}" tabindex="-1" if.bind="!multiple" >
+        <option if.bind="options" repeat.for="option of options" value.bind="option.value">${option.label}</option>
+        <optgroup repeat.for="group of groupedoptions" label.bind="group.label" if.bind="groupedoptions && group.isGroup">
+            <option repeat.for="option of group.options" value.bind="option.value">${option.label}</option>
+        </optgroup>
     </select>
 </template>

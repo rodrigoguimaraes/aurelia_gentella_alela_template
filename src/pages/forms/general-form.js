@@ -271,10 +271,102 @@ export class GeneralForm extends InnerPage{
 //     <!-- Select2 -->
 
         this.selectOptions = [
-            {label: 'My Option', value: 'my-value'},
-            {label: 'Some Value', value: '1212'},
-            {label: 'Select Me!', value: 'fsdf32423_312'},
+            {label: '', value: ''},
+            {label: 'AK', value: 'Alaska'},
+            {label: 'HI', value: 'Hawaii'},
+            {label: 'CA', value: 'California'},
+            {label: 'NV', value: 'Nevada'},
+            {label: 'OR', value: 'Oregon'},
+            {label: 'WA', value: 'Washington'},
+            {label: 'AZ', value: 'Arizona'},
+            {label: 'CO', value: 'Colorado'},
+            {label: 'ID', value: 'Idaho'},
+            {label: 'MT', value: 'Montana'},
+            {label: 'NE', value: 'Nebraska'},
+            {label: 'NM', value: 'New Mexico'},
+            {label: 'ND', value: 'North Dakota'},
+            {label: 'UT', value: 'Utah'},
+            {label: 'WY', value: 'Wyoming'},
+            {label: 'AR', value: 'Arkansas'},
+            {label: 'IL', value: 'Illinois'},
+            {label: 'IA', value: 'Iowa'},
+            {label: 'KS', value: 'Kansas'},
+            {label: 'KY', value: 'Kentucky'},
+            {label: 'LA', value: 'Louisiana'},
+            {label: 'MN', value: 'Minnesota'},
+            {label: 'MS', value: 'Mississippi'},
+            {label: 'MO', value: 'Missouri'},
+            {label: 'OK', value: 'Oklahoma'},
+            {label: 'SD', value: 'South Dakota'},
+            {label: 'TX', value: 'Texas'}
+            
         ];
+
+
+        this.selectGroupedOptions = [
+            {isGroup : true, label : 'Alaskan/Hawaiian Time Zone',
+            options : [
+                {label: 'AK', value: 'Alaska'},
+                {label: 'HI', value: 'Hawaii'}
+            ]
+            },
+            {isGroup : true, label : 'Pacific Time Zone',
+            options : [
+                {label: 'CA', value: 'California'},
+                {label: 'NV', value: 'Nevada'},
+                {label: 'OR', value: 'Oregon'},
+                {label: 'WA', value: 'Washington'}
+            ]
+            },
+            {isGroup : true, label : 'Mountain Time Zone',
+            options : [
+              {label: 'AZ', value: 'Arizona'},
+              {label: 'CO', value: 'Colorado'},
+              {label: 'ID', value: 'Idaho'},
+              {label: 'MT', value: 'Montana'},
+              {label: 'NE', value: 'Nebraska'},
+              {label: 'NM', value: 'New Mexico'},
+              {label: 'ND', value: 'North Dakota'},
+              {label: 'UT', value: 'Utah'},
+              {label: 'WY', value: 'Wyoming'},
+            ]
+            }                    
+        ];
+        console.log(this.selectGroupedOptions);
+
+      this.selectMultipleOptions = [            
+            {label: 'AK', value: 'Alaska'},
+            {label: 'HI', value: 'Hawaii'},
+            {label: 'CA', value: 'California'},
+            {label: 'NV', value: 'Nevada'},
+            {label: 'OR', value: 'Oregon'},
+            {label: 'WA', value: 'Washington'},
+            {label: 'AZ', value: 'Arizona'},
+            {label: 'CO', value: 'Colorado'},
+            {label: 'ID', value: 'Idaho'},
+            {label: 'MT', value: 'Montana'},
+            {label: 'NE', value: 'Nebraska'},
+            {label: 'NM', value: 'New Mexico'},
+            {label: 'ND', value: 'North Dakota'},
+            {label: 'UT', value: 'Utah'},
+            {label: 'WY', value: 'Wyoming'},
+            {label: 'AR', value: 'Arkansas'},
+            {label: 'IL', value: 'Illinois'},
+            {label: 'IA', value: 'Iowa'},
+            {label: 'KS', value: 'Kansas'},
+            {label: 'KY', value: 'Kentucky'},
+            {label: 'LA', value: 'Louisiana'},
+            {label: 'MN', value: 'Minnesota'},
+            {label: 'MS', value: 'Mississippi'},
+            {label: 'MO', value: 'Missouri'},
+            {label: 'OK', value: 'Oklahoma'},
+            {label: 'SD', value: 'South Dakota'},
+            {label: 'TX', value: 'Texas'}
+            
+        ];          
+
+
+
 
         // $(".select2_single").select2({
         //   placeholder: "Select a state",
